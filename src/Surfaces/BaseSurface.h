@@ -24,12 +24,12 @@ class BaseSurface {
 		virtual void setTexCoord(int index, Vec2 t) = 0;
 		virtual void setTexCoords(std::vector<Vec2> t) = 0;
 		virtual void moveBy(Vec3 v) = 0;
-        virtual int getType() = 0;
+	        virtual int getType() = 0;
 		virtual bool hitTest(Vec2 p) = 0;
 		virtual ofPolyline getHitArea() = 0;
-        virtual ofPolyline getTextureHitArea() = 0;
+        	virtual ofPolyline getTextureHitArea() = 0;
 		virtual std::vector<Vec3> getVertices() = 0;
-        virtual std::vector<Vec2> getTexCoords() = 0;
+		virtual std::vector<Vec2> getTexCoords() = 0;
 		virtual BaseSurface * clone() = 0;
 
 		void drawTexture(Vec3 position);

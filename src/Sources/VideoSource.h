@@ -27,8 +27,8 @@ class VideoSource : public BaseSource {
 		void setLoop(bool loop);
 		bool getLoop();
 		void clear();
-        void togglePause();
-        void stop();
+		void togglePause();
+		void stop();
 		void update(ofEventArgs & args);
 
 	private:

@@ -136,10 +136,12 @@ void ofxPiMapper::scaleDown(){
 }
 
 void ofxPiMapper::togglePauseForSurface(unsigned int i){
-	ofx::piMapper::BaseSource * s =
-		_application.getSurfaceManager()->getActivePreset()->getSurfaces().at(i)->getSource();
-	if(s->getType() == ofx::piMapper::SourceType::SOURCE_TYPE_VIDEO){
-		s->togglePause();
+	ofx::piMapper::BaseSource * s = _application.getSurfaceManager()
+					->getActivePreset()->getSurfaces().at(i)->getSource();
+	
+	if(s->getType() == ofx::piMapper::SourceType::SOURCE_TYPE_VIDEO)
+	{
+	s->togglePause();
 	}
 }
 
